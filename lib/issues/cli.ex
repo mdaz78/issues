@@ -21,7 +21,7 @@ defmodule Issues.CLI do
   end
 
   def process({user, project, _count}) do
-    Issues.GithubIssues.fetch(user, project) do
+    Issues.GithubIssues.fetch(user, project)
   end
 
   @doc """
